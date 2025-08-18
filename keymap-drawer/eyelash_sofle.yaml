@@ -181,7 +181,7 @@ layers:
   - {t: '=', s: +}
   - $$mdi:apple-keyboard-option$$
   - RGUI
-  - RIGHT CTRL
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -290,8 +290,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT USB
   - OUT BLE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB BRI
+  - RGB BRD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
