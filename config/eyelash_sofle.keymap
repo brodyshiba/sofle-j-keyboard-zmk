@@ -65,7 +65,7 @@
         layer1 {
             bindings = <
 &kp GRAVE   &kp N1     &kp N2    &kp N3        &kp N4  &kp N5      &kp UP_ARROW        &kp N6     &kp N7     &kp N8         &kp N9         &kp N0       &kp BACKSPACE
-&kp TAB     &kp Q      &kp W     &kp E         &kp R   &kp T       &kp DOWN_ARROW      &kp Y      &kp U      &kp I          &kp O          &kp P        &to 0
+&kp TAB     &kp Q      &kp W     &kp E         &kp R   &kp T       &kp DOWN_ARROW      &kp Y      &kp U      &kp I          &kp O          &kp P        &tog 1
 &kp ESC     &kp LSHFT  &kp A     &kp SPACE     &kp D   &kp F       &kp LEFT_ARROW      &kp H      &kp J      &kp K          &kp L          &kp SEMI     &kp APOS
 &kp Z       &kp C      &kp X     &kp V         &kp B   &kp G       &kp RIGHT_ARROW     &kp N      &kp M      &kp RA(COMMA)  &kp RG(DOT)    &kp RC(FSLH) &kp RIGHT_SHIFT
 &kp C_MUTE  &kp LCTRL  &kp LGUI  &td_lctrl_MO2 &kp W   &kp S       &kp ENTER           &kp ENTER  &kp SPACE  &mo 1          &kp RIGHT_ALT  &mo 2
@@ -103,11 +103,11 @@
 
         layer4 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none     &none  &none  &none  &none  &none  &none
-&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none  &none
-&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none  &none
-&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none  &none
-&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none
+&trans          &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4     &none     &none      &none      &none  &none  &none  &none
+&bootloader     &none          &none            &none            &none             &none            &none     &none      &none      &none  &none  &tog 1  &none
+&none           &none          &none            &none            &none             &none            &none     &none      &none      &none  &none  &none  &none
+&rgb_ug RGB_OFF &rgb_ug RGB_ON &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI   &none            &none     &none      &none      &none  &none  &none  &none
+&none           &none          &none            &none            &kp BACKSPACE     &kp DELETE       &none     &kp ENTER  &kp SPACE  &none  &none  &none
             >;
 
             display-name = "quantum";
