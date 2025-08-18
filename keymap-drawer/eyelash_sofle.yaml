@@ -49,9 +49,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: 'AltGr+,', s: AltGr+<}
-  - {t: Gui+., s: Gui+>}
-  - {t: Ctl+/, s: 'Ctl+?'}
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: RGUI, s: '>'}
+  - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
@@ -114,9 +114,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: 'AltGr+,', s: AltGr+<}
-  - {t: Gui+., s: Gui+>}
-  - {t: Ctl+/, s: 'Ctl+?'}
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: RGUI, s: '>'}
+  - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
