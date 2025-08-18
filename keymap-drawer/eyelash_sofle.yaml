@@ -234,7 +234,7 @@ layers:
   - F9
   - F10
   - F11
-  - f12
+  - F12
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
