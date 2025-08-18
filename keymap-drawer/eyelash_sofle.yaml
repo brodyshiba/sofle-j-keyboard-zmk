@@ -54,17 +54,17 @@ layers:
   - {t: Ctl+/, s: 'Ctl+?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
-  - '&td_lctrl_MO2'
+  - $$mdi:apple-keyboard-option$$
+  - LGUI
+  - '&td_lctrl_nav'
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - gaming
+  - '&td_num_nav'
   - $$mdi:apple-keyboard-option$$
-  - numbers
+  - RGUI
   gaming:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -119,17 +119,17 @@ layers:
   - {t: Ctl+/, s: 'Ctl+?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - LGUI
-  - '&td_lctrl_MO2'
+  - '&td_lctrl_nav'
   - W
   - S
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - {t: gaming, type: held}
+  - '&td_num_nav'
+  - RGUI
   - $$mdi:apple-keyboard-option$$
-  - numbers
   numbers:
   - F1
   - F2
@@ -172,8 +172,8 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
+  - LGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
   - +
   - {t: '[', s: '{'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -192,9 +192,9 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   navigation:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -237,8 +237,8 @@ layers:
   - f12
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
+  - LGUI
   - $$mdi:apple-keyboard-option$$
-  - none
   - none
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
