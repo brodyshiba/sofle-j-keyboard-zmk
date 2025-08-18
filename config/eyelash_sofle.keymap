@@ -38,11 +38,18 @@
     };
 
     behaviors {
-        td_lctrl_MO2: tap_dance_0 {
+        td_lctrl_nav: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&mo 3>;
+        };
+
+        td_num_nav: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 2>, <&mo 3>;
         };
     };
 
@@ -55,7 +62,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R          &kp T         &kp DOWN_ARROW    &kp Y      &kp U      &kp I          &kp O          &kp P        &mo 4
 &kp ESC     &kp A      &kp S         &kp D         &kp F          &kp G         &kp LEFT_ARROW    &kp H      &kp J      &kp K          &kp L          &kp SEMI     &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V          &kp B         &kp RIGHT_ARROW   &kp N      &kp M      &kp RA(COMMA)  &kp RG(DOT)    &kp RC(FSLH) &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &td_lctrl_MO2 &kp BACKSPACE  &kp DELETE    &kp ENTER         &kp ENTER  &kp SPACE  &mo 1          &kp RIGHT_ALT  &mo 2
+&kp C_MUTE  &kp LALT   &kp LGUI      &td_lctrl_nav &kp BACKSPACE  &kp DELETE    &kp ENTER         &kp ENTER  &kp SPACE  &td_num_nav    &kp RIGHT_ALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -68,7 +75,7 @@
 &kp TAB     &kp Q      &kp W     &kp E         &kp R   &kp T       &kp DOWN_ARROW      &kp Y      &kp U      &kp I          &kp O          &kp P        &tog 1
 &kp ESC     &kp LSHFT  &kp A     &kp SPACE     &kp D   &kp F       &kp LEFT_ARROW      &kp H      &kp J      &kp K          &kp L          &kp SEMI     &kp APOS
 &kp Z       &kp C      &kp X     &kp V         &kp B   &kp G       &kp RIGHT_ARROW     &kp N      &kp M      &kp RA(COMMA)  &kp RG(DOT)    &kp RC(FSLH) &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LGUI  &td_lctrl_MO2 &kp W   &kp S       &kp ENTER           &kp ENTER  &kp SPACE  &mo 1          &kp RIGHT_ALT  &mo 2
+&kp C_MUTE  &kp LALT   &kp LGUI  &td_lctrl_nav &kp W   &kp S       &kp ENTER           &kp ENTER  &kp SPACE  &td_num_nav    &kp RGUI       &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -77,11 +84,11 @@
 
         layer2 {
             bindings = <
-&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &mmv MOVE_UP       &kp F7              &kp F8           &kp F9          &kp F10    &kp F11          &kp F12
-&kp GRAVE   &kp EXCL         &kp AT_SIGN     &kp HASH         &kp DOLLAR       &kp PERCENT        &mmv MOVE_DOWN     &kp CARET           &kp AMPERSAND    &kp ASTERISK    &kp LPAR   &kp RPAR         &kp MINUS
-&kp CAPS    &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &mmv MOVE_LEFT     &kp N6              &kp N7           &kp N8          &kp N9     &kp N0           &kp BACKSLASH
-&kp LSHIFT  &kp LCTRL        &kp LEFT_ALT    &kp LEFT_GUI     &kp PLUS         &kp LEFT_BRACKET   &mmv MOVE_RIGHT    &kp RIGHT_BRACKET   &kp EQUALS       &kp RALT        &kp RGUI   &kp RIGHT_CTRL   &kp RIGHT_SHIFT
-&trans      &trans           &trans          &none            &kp BACKSPACE    &kp DELETE         &kp ENTER          &kp ENTER           &kp SPACE        &none           &trans     &trans
+&kp F1      &kp F2           &kp F3          &kp F4        &kp F5           &kp F6             &mmv MOVE_UP       &kp F7              &kp F8           &kp F9          &kp F10    &kp F11          &kp F12
+&kp GRAVE   &kp EXCL         &kp AT_SIGN     &kp HASH      &kp DOLLAR       &kp PERCENT        &mmv MOVE_DOWN     &kp CARET           &kp AMPERSAND    &kp ASTERISK    &kp LPAR   &kp RPAR         &kp MINUS
+&kp CAPS    &kp N1           &kp N2          &kp N3        &kp N4           &kp N5             &mmv MOVE_LEFT     &kp N6              &kp N7           &kp N8          &kp N9     &kp N0           &kp BACKSLASH
+&kp LSHIFT  &kp LCTRL        &kp LGUI        &kp LALT      &kp PLUS         &kp LEFT_BRACKET   &mmv MOVE_RIGHT    &kp RIGHT_BRACKET   &kp EQUALS       &kp RALT        &kp RGUI   &kp RIGHT_CTRL   &kp RIGHT_SHIFT
+&trans      &trans           &trans          &none         &kp BACKSPACE    &kp DELETE         &kp ENTER          &kp ENTER           &kp SPACE        &none           &trans     &trans
             >;
 
             display-name = "numbers";
@@ -93,7 +100,7 @@
 &none      &none     &none         &none       &none          &none         &mmv MOVE_UP      &none      &none      &none    &none     &none      &none
 &kp PG_UP  &none     &kp lc(LEFT)  &kp UP      &kp lc(RIGHT)  &none         &mmv MOVE_DOWN    &kp F1     &kp F2     &kp F3   &kp F4    &kp F5     &kp f6
 &kp PG_DN  &kp HOME  &kp LEFT      &kp DOWN    &kp RIGHT      &kp END       &mmv MOVE_LEFT    &kp F7     &kp F8     &kp F9   &kp F10   &kp F11    &kp f12
-&kp LSHIFT &kp LCTRL &kp LEFT_ALT  &kp none    &kp none       &none         &mmv MOVE_RIGHT   &none      &none      &kp RALT &kp RGUI  &kp RCTRL  &kp RSHIFT
+&kp LSHIFT &kp LCTRL &kp LGUI      &kp LALT    &kp none       &none         &mmv MOVE_RIGHT   &none      &none      &kp RALT &kp RGUI  &kp RCTRL  &kp RSHIFT
 &trans     &none     &none         &none       &kp BACKSPACE  &kp DELETE    &mkp LCLK         &kp ENTER  &kp space  &none    &none     &none
             >;
 
