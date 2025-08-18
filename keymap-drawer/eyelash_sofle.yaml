@@ -178,7 +178,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: ']', s: '}'}
-  - EQUALS
+  - {t: '=', s: +}
   - $$mdi:apple-keyboard-option$$
   - RGUI
   - RIGHT CTRL
