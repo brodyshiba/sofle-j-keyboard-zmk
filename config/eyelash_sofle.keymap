@@ -82,13 +82,12 @@
             display-name = "gaming";
         };
 
-
         layer2 {
             bindings = <
-&kp F1      &kp F2           &kp F3          &kp F4        &kp F5           &kp F6             &mmv MOVE_UP       &kp F7              &kp F8           &kp F9          &kp F10    &kp F11          &kp F12
-&kp GRAVE   &kp EXCL         &kp AT_SIGN     &kp HASH      &kp DOLLAR       &kp PERCENT        &mmv MOVE_DOWN     &kp CARET           &kp AMPERSAND    &kp ASTERISK    &kp LPAR   &kp RPAR         &kp MINUS
-&kp CAPS    &kp N1           &kp N2          &kp N3        &kp N4           &kp N5             &mmv MOVE_LEFT     &kp N6              &kp N7           &kp N8          &kp N9     &kp N0           &kp BACKSLASH
-&kp LSHIFT  &kp LCTRL        &kp LGUI        &kp LALT      &kp PLUS         &kp LEFT_BRACKET   &mmv MOVE_RIGHT    &kp RIGHT_BRACKET   &kp EQUAL        &kp RALT        &kp RGUI   &kp RIGHT_CTRL   &kp RIGHT_SHIFT
+&kp F1      &kp F2           &kp F3          &kp F4        &kp F5           &kp F6             &mmv MOVE_UP       &kp F7              &kp F8           &kp F9          &kp F10    &kp F11    &kp F12
+&kp GRAVE   &kp EXCL         &kp AT_SIGN     &kp HASH      &kp DOLLAR       &kp PERCENT        &mmv MOVE_DOWN     &kp CARET           &kp AMPERSAND    &kp ASTERISK    &kp LPAR   &kp RPAR   &kp MINUS
+&kp CAPS    &kp N1           &kp N2          &kp N3        &kp N4           &kp N5             &mmv MOVE_LEFT     &kp N6              &kp N7           &kp N8          &kp N9     &kp N0     &kp BACKSLASH
+&kp LSHIFT  &kp LCTRL        &kp LGUI        &kp LALT      &kp PLUS         &kp LEFT_BRACKET   &mmv MOVE_RIGHT    &kp RIGHT_BRACKET   &kp EQUAL        &kp RALT        &kp RGUI   &kp RCTRL  &kp RSHIFT
 &trans      &trans           &trans          &none         &kp BACKSPACE    &kp DELETE         &kp ENTER          &kp ENTER           &kp SPACE        &none           &trans     &trans
             >;
 
