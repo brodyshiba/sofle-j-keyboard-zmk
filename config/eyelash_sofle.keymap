@@ -42,65 +42,66 @@
 
         layer0 {
             bindings = <
-&kp GRAVE     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &mo 3
-&kp ESC    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &mo 1  &kp BACKSPACE   &kp DELETE    &kp ENTER        &kp ENTER  &kp SPACE  &mo 1      &kp RIGHT_ALT  &mo 2
+&kp GRAVE   &kp N1     &kp N2        &kp N3  &kp N4         &kp N5        &kp UP_ARROW      &kp N6     &kp N7     &kp N8         &kp N9         &kp N0       &kp BACKSPACE
+&kp TAB     &kp Q      &kp W         &kp E   &kp R          &kp T         &kp DOWN_ARROW    &kp Y      &kp U      &kp I          &kp O          &kp P        &mo 4
+&kp ESC     &kp A      &kp S         &kp D   &kp F          &kp G         &kp LEFT_ARROW    &kp H      &kp J      &kp K          &kp L          &kp SEMI     &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C   &kp V          &kp B         &kp RIGHT_ARROW   &kp N      &kp M      &kp RA(COMMA)  &kp RG(DOT)    &kp RC(FSLH) &kp RIGHT_SHIFT
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &mo 1   &kp BACKSPACE  &kp DELETE    &kp ENTER         &kp ENTER  &kp SPACE  &mo 1          &kp RIGHT_ALT  &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "default";
         };
 
-        layer_1 {
+        layer1 {
             bindings = <
-&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &mmv MOVE_UP     &kp F7              &kp F8           &kp F9          &kp F10         &kp F11          &kp F12
-&kp GRAVE   &kp EXCL         &kp AT_SIGN     &kp HASH         &kp DOLLAR       &kp PERCENT        &mmv MOVE_DOWN   &kp CARET           &kp AMPERSAND    &kp ASTERISK    &kp LPAR        &kp RPAR         &kp MINUS
-&kp CAPS    &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &mmv MOVE_LEFT   &kp N6              &kp N7           &kp N8          &kp N9          &kp N0           &kp BACKSLASH
-&kp LSHIFT  &kp LCTRL        &kp LEFT_ALT    &kp LEFT_GUI     &kp PLUS         &kp LEFT_BRACKET   &mmv MOVE_RIGHT  &kp RIGHT_BRACKET   &kp EQUALS       &kp RIGHT_GUI   &kp RIGHT_ALT   &kp RIGHT_CTRL   &kp RIGHT_SHIFT
-&trans      &trans           &trans          &mo 2            &trans           &trans             &trans           &trans              &trans           &mo 2           &trans          &trans
+&kp GRAVE   &kp N1     &kp N2    &kp N3        &kp N4  &kp N5      &kp UP_ARROW        &kp N6     &kp N7     &kp N8         &kp N9         &kp N0       &kp BACKSPACE
+&kp TAB     &kp Q      &kp W     &kp E         &kp R   &kp T       &kp DOWN_ARROW      &kp Y      &kp U      &kp I          &kp O          &kp P        &to 0
+&kp ESC     &kp LSHFT  &kp A     &kp SPACE     &kp D   &kp F       &kp LEFT_ARROW      &kp H      &kp J      &kp K          &kp L          &kp SEMI     &kp APOS
+&kp Z       &kp C      &kp X     &kp V         &kp B   &kp G       &kp RIGHT_ARROW     &kp N      &kp M      &kp RA(COMMA)  &kp RG(DOT)    &kp RC(FSLH) &kp RIGHT_SHIFT
+&kp C_MUTE  &kp LCTRL  &kp LGUI  &mo 1         &kp W   &kp S       &kp ENTER           &kp ENTER  &kp SPACE  &mo 1          &kp RIGHT_ALT  &mo 2
             >;
 
-            display-name = "layer1";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "gaming";
+        };
+
+        layer2 {
+            bindings = <
+&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &mmv MOVE_UP       &kp F7              &kp F8           &kp F9          &kp F10    &kp F11          &kp F12
+&kp GRAVE   &kp EXCL         &kp AT_SIGN     &kp HASH         &kp DOLLAR       &kp PERCENT        &mmv MOVE_DOWN     &kp CARET           &kp AMPERSAND    &kp ASTERISK    &kp LPAR   &kp RPAR         &kp MINUS
+&kp CAPS    &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &mmv MOVE_LEFT     &kp N6              &kp N7           &kp N8          &kp N9     &kp N0           &kp BACKSLASH
+&kp LSHIFT  &kp LCTRL        &kp LEFT_ALT    &kp LEFT_GUI     &kp PLUS         &kp LEFT_BRACKET   &mmv MOVE_RIGHT    &kp RIGHT_BRACKET   &kp EQUALS       &kp RALT        &kp RGUI   &kp RIGHT_CTRL   &kp RIGHT_SHIFT
+&trans      &trans           &trans          &none            &kp BACKSPACE    &kp DELETE         &kp ENTER          &kp ENTER           &kp SPACE        &none           &trans     &trans
+            >;
+
+            display-name = "numbers";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        layer3 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&none      &none     &none         &none       &none          &none         &mmv MOVE_UP      &none      &none      &none    &none     &none      &none
+&kp PG_UP  &none     &kp lc(LEFT)  &kp UP      &kp lc(RIGHT)  &none         &mmv MOVE_DOWN    &kp F1     &kp F2     &kp F3   &kp F4    &kp F5     &kp f6
+&kp PG_DN  &kp HOME  &kp LEFT      &kp DOWN    &kp RIGHT      &kp END       &mmv MOVE_LEFT    &kp F7     &kp F8     &kp F9   &kp F10   &kp F11    &kp f12
+&kp LSHIFT &kp LCTRL &kp LEFT_ALT  &kp none    &kp none       &none         &mmv MOVE_RIGHT   &none      &none      &kp RALT &kp RGUI  &kp RCTRL  &kp RSHIFT
+&trans     &none     &none         &none       &kp BACKSPACE  &kp DELETE    &mkp LCLK         &kp ENTER  &kp space  &none    &none     &none
             >;
 
-            display-name = "layer2";
+            display-name = "navigation";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        layer4 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none     &none  &none  &none  &none  &none  &none
+&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none  &none
+&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none  &none
+&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none  &none
+&none   &none        &none          &none        &none        &none               &none     &none  &none  &none  &none  &none
             >;
 
-            display-name = "layer3";
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "layer4";
+            display-name = "quantum";
         };
     };
 };
