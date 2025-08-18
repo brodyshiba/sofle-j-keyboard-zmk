@@ -211,9 +211,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - lc(LEFT)
+  - lc(LEFT ARROW)
   - $$mdi:arrow-up-bold$$
-  - lc(RIGHT)
+  - lc(RIGHT ARROW)
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - F1
