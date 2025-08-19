@@ -291,7 +291,7 @@ layers:
   - RGB EFF
   - RGB SPI
   - RGB BRI
-  - RBG HUI
+  - RGB HUI
   - RGB SAI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -303,8 +303,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB EFR
   - RGB SPD
-  - '&rbg_ug RGB_BRD'
-  - RBG HUD
+  - RGB BRD
+  - RGB HUD
   - RGB SAD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
