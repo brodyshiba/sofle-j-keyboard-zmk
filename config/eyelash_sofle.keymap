@@ -83,6 +83,7 @@
             bindings = <
 &trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans         &trans  @trans
 &trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans         &trans  @trans
+&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans         &trans  @trans
 &trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &mt RCTRL DOT  &mt RGUI FSLH  &trans  @trans
 &trans  &trans  &trans  &td_lgui_nav  &trans  &trans     &trans     &trans  &trans  &trans         &trans         @trans
             >;
