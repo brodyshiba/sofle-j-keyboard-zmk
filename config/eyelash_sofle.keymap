@@ -55,11 +55,18 @@
             bindings = <&mo 3>, <&mo 4>;
         };
 
-        td_lgui_nav: tap_dance_3 {
+        td_lgui_cgswapnav: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LGUI>, <&mo 5>;
+        };
+
+        td_num_cgswapav: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 3>, <&mo 5>;
         };
     };
 
@@ -81,11 +88,11 @@
 
         layer1 {
             bindings = <
-&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans         &trans
-&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans         &trans
-&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans         &trans
-&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &trans         &mt RCTRL DOT  &mt RGUI FSLH  &trans
-&trans      &trans     &trans        &td_lgui_nav  &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans
+&trans      &trans     &trans        &trans              &trans   &trans       &trans            &trans     &trans     &trans           &trans         &trans         &trans
+&trans      &trans     &trans        &trans              &trans   &trans       &trans            &trans     &trans     &trans           &trans         &trans         &trans
+&trans      &trans     &trans        &trans              &trans   &trans       &trans            &trans     &trans     &trans           &trans         &trans         &trans
+&trans      &trans     &trans        &trans              &trans   &trans       &trans            &trans     &trans     &trans           &mt RCTRL DOT  &mt RGUI FSLH  &trans
+&trans      &trans     &trans        &td_lgui_cgswapnav  &trans   &trans       &trans            &trans     &trans     &td_num_cgswapav &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
