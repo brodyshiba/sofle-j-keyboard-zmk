@@ -31,7 +31,6 @@
     flavor = "tap-preferred";
 };
 
-
 / {
 
     scroll_encoder: scroll_encoder {
@@ -46,14 +45,21 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LCTRL>, <&mo 3>;
+            bindings = <&kp LCTRL>, <&mo 4>;
         };
 
         td_num_nav: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 2>, <&mo 3>;
+            bindings = <&mo 3>, <&mo 4>;
+        };
+
+        td_lgui_nav: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LGUI>, <&mo 4>;
         };
     };
 
@@ -63,7 +69,7 @@
         layer0 {
             bindings = <
 &kp GRAVE   &kp N1     &kp N2        &kp N3        &kp N4         &kp N5        &kp UP_ARROW      &kp N6     &kp N7     &kp N8         &kp N9         &kp N0         &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R          &kp T         &kp DOWN_ARROW    &kp Y      &kp U      &kp I          &kp O          &kp P          &mo 4
+&kp TAB     &kp Q      &kp W         &kp E         &kp R          &kp T         &kp DOWN_ARROW    &kp Y      &kp U      &kp I          &kp O          &kp P          &mo 5
 &kp ESC     &kp A      &kp S         &kp D         &kp F          &kp G         &kp LEFT_ARROW    &kp H      &kp J      &kp K          &kp L          &kp SEMI       &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V          &kp B         &kp RIGHT_ARROW   &kp N      &kp M      &mt RALT COMMA &mt RGUI DOT   &mt RCTRL FSLH &kp RIGHT_SHIFT
 &kp C_MUTE  &kp LALT   &kp LGUI      &td_lctrl_nav &kp BACKSPACE  &kp DELETE    &kp ENTER         &kp ENTER  &kp SPACE  &td_num_nav    &kp RGUI       &kp RALT
@@ -75,8 +81,20 @@
 
         layer1 {
             bindings = <
+&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans      &trans 
+&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans      &trans 
+&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &mt RCTRL DOT  &RGUI FSLH  &trans 
+&trans  &trans  &trans  &td_lgui_nav  &trans  &trans     &trans     &trans  &trans  &trans         &trans 
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "cgswap";
+        };
+
+        layer2 {
+            bindings = <
 &kp GRAVE   &kp N1     &kp N2    &kp N3        &kp N4  &kp N5      &kp UP_ARROW        &kp N6     &kp N7     &kp N8         &kp N9         &kp N0         &kp BACKSPACE
-&kp TAB     &kp Q      &kp W     &kp E         &kp R   &kp T       &kp DOWN_ARROW      &kp Y      &kp U      &kp I          &kp O          &kp P          &tog 1
+&kp TAB     &kp Q      &kp W     &kp E         &kp R   &kp T       &kp DOWN_ARROW      &kp Y      &kp U      &kp I          &kp O          &kp P          &tog 2
 &kp ESC     &kp LSHFT  &kp A     &kp SPACE     &kp D   &kp F       &kp LEFT_ARROW      &kp H      &kp J      &kp K          &kp L          &kp SEMI       &kp APOS
 &kp Z       &kp C      &kp X     &kp V         &kp B   &kp G       &kp RIGHT_ARROW     &kp N      &kp M      &mt RALT COMMA &mt RGUI DOT   &mt RCTRL FSLH &kp RIGHT_SHIFT
 &kp C_MUTE  &kp LALT   &kp LGUI  &td_lctrl_nav &kp W   &kp S       &kp ENTER           &kp ENTER  &kp SPACE  &td_num_nav    &kp RGUI       &kp RALT
@@ -86,7 +104,7 @@
             display-name = "gaming";
         };
 
-        layer2 {
+        layer3 {
             bindings = <
 &kp F1      &kp F2           &kp F3          &kp F4        &kp F5           &kp F6             &mmv MOVE_UP       &kp F7              &kp F8           &kp F9          &kp F10    &kp F11    &kp F12
 &kp GRAVE   &kp EXCL         &kp AT_SIGN     &kp HASH      &kp DOLLAR       &kp PERCENT        &mmv MOVE_DOWN     &kp CARET           &kp AMPERSAND    &kp ASTERISK    &kp LPAR   &kp RPAR   &kp MINUS
@@ -99,7 +117,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer3 {
+        layer4 {
             bindings = <
 &none      &none     &none               &none           &none                &none         &mmv MOVE_UP      &none      &none      &none    &none     &none      &none
 &kp PG_UP  &none     &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &none         &mmv MOVE_DOWN    &kp F1     &kp F2     &kp F3   &kp F4    &kp F5     &kp F6
@@ -115,7 +133,7 @@
         layer4 {
             bindings = <
 &trans       &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4     &none       &bt BT_CLR  &bt BT_CLR_ALL &none  &none  &none  &none
-&bootloader  &rgb_ug RGB_OFF &rgb_ug RGB_ON   &out OUT_USB     &out OUT_BLE      &none            &none       &none       &none          &none  &none  &tog 1 &none
+&bootloader  &rgb_ug RGB_OFF &rgb_ug RGB_ON   &out OUT_USB     &out OUT_BLE      &none            &none       &none       &none          &none  &tog3  &tog 2 &none
 &none        &rgb_ug RGB_EFF &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI   &rgb_ug RGB_SAI  &none       &none       &none          &none  &none  &none  &none
 &none        &rgb_ug RGB_EFR &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD   &rgb_ug RGB_SAD  &none       &none       &none          &none  &none  &none  &none
 &none        &none          &none            &none             &kp BACKSPACE     &kp DELETE       &none       &kp ENTER   &kp SPACE      &none  &none  &none
