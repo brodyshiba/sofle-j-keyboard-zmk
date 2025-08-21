@@ -48,21 +48,21 @@
             bindings = <&kp LCTRL>, <&mo 4>;
         };
 
-        td_num_nav: tap_dance_2 {
+        td_num_nav: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 3>, <&mo 4>;
         };
 
-        td_lgui_cgswapnav: tap_dance_3 {
+        td_lgui_cgswapnav: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LGUI>, <&mo 5>;
         };
 
-        td_num_cgswapav: tap_dance_2 {
+        td_num_cgswapav: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -147,7 +147,7 @@
 &trans     &none     &none               &none           &kp BACKSPACE        &kp DELETE    &mkp LCLK         &kp ENTER  &kp SPACE  &none    &none     &none
             >;
 
-            display-name = "cgswapnav";
+            display-name = "cgs_nav";
             sensor-bindings = <&scroll_encoder>;
         };
 
