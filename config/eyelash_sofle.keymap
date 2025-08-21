@@ -81,11 +81,11 @@
 
         layer1 {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans         &trans  @trans
-&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans         &trans  @trans
-&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &trans         &trans         &trans  @trans
-&trans  &trans  &trans  &trans        &trans  &trans     &trans     &trans  &trans  &mt RCTRL DOT  &mt RGUI FSLH  &trans  @trans
-&trans  &trans  &trans  &td_lgui_nav  &trans  &trans     &trans     &trans  &trans  &trans         &trans         @trans
+&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans         &trans
+&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans         &trans
+&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans         &trans
+&trans      &trans     &trans        &trans        &trans         &trans       &trans            &trans     &trans     &mt RCTRL DOT  &mt RGUI FSLH  &trans         &trans
+&trans      &trans     &trans        &td_lgui_nav  &trans         &trans       &trans            &trans     &trans     &trans         &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
