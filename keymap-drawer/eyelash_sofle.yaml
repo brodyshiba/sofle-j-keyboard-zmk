@@ -260,7 +260,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  navigation:
+  nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -279,6 +279,71 @@ layers:
   - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - PG DN
+  - HOME
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - END
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
+  - RGUI
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  cgswapnav:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PG UP
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - F1
